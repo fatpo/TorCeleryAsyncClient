@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+.idea/*
+
 # Distribution / packaging
 .Python
 env/
@@ -99,3 +101,8 @@ ENV/
 
 # mypy
 .mypy_cache/
+.idea/TorAsyncClient.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
