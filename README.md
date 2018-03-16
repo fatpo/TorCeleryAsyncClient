@@ -65,7 +65,7 @@ def celery_do_longtime_task(some_param):
     return ret
 
 ```
-第二步，在我们客户端建立调用方法：
+第二步，在tornado项目中建立调用方法：
 ```
 @tornado.gen.coroutine
 def do_longtime_task():
@@ -81,7 +81,7 @@ def do_longtime_task():
     ret = future.result()
     raise tornado.gen.Return(ret)
 ```
-第三步，在tornao中调用第二步中的调用方法：
+第三步，在tornao项目中调用第二步中的调用方法：
 ```
 @tornado.gen.coroutine
 def main():
